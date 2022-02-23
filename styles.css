@@ -1,0 +1,24 @@
+body {
+  margin: 0 auto;
+  width: 500px;
+  border: 1px solid #a6d5ff;
+  border-radius: 5px;
+}
+h1 {
+  font-size: 28px;
+  text-align: center;
+  text-decoration: underline;
+}
+.row {
+  margin-top: 25px;
+}
+
+#city-name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#display-temp {
+  font-size: 42px;
+  font-weight: 500;
+}
