@@ -40,22 +40,21 @@ function showTemperature(response) {
   let temperature = document.querySelector("#display-temp");
   temperature.innerHTML = `${displayTemp} °C`;
 }
-
-function showCity(event) {
+function handleSubmit(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-input");
-  let cityName = document.querySelector("#city-name");
   let city = cityInput.value;
-  cityName.innerHTML = city[0].toUpperCase() + city.substring(1);
+  showCity(city);
+}
 
+function showCity(city) {
   let apiKey = "1bc306ef820d7e96f756aa75ef67ef95";
-
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
 
 let searchCity = document.querySelector("#search-city");
-searchCity.addEventListener("submit", showCity);
+searchCity.addEventListener("submit", handleSubmit);
 
 function showPosition(position) {
   console.log(position.coords.latitude);
@@ -72,3 +71,4 @@ function showCurrentPosition() {
 
 let currentButton = document.querySelector("#current-location");
 currentButton.addEventListener("click", showCurrentPosition);
+showCity("Melbourne");
