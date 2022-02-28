@@ -31,15 +31,28 @@
           value="Current"
         />
       </form>
-      <div class="row">
-        <div class="col">
+      <div class="row city-weather">
+        <div class="col-6">
           <div id="city-name">Melbourne</div>
           <div id="showDate">Sunday 17:50</div>
+
           <div id="weather-description">Clear</div>
-          <div id="display-temp">17 °C</div>
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
+            alt="Clear"
+            id="icon"
+            class="float-left"
+          />
+          <div id="display-temp">17</div>
+          <div class="units">
+            </span>
+            <small ><a href="#" id="celsius" class="active">°C</a> </small
+            ><span>
+              <small ><a href="#" id="fahrenheit" class="">|°F</a> </small>
+          </div>
         </div>
 
-        <div class="col-5">
+        <div class="col-6">
           <div id="humidity">Humidity: 68%</div>
           <div id="wind">Wind: 4km/h</div>
         </div>
