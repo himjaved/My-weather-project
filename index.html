@@ -19,18 +19,25 @@
       <h1>Weather App</h1>
      
       <form id="search-city" autocomplete="off">
-        <input type="text" placeholder="Enter a City" id="city-input" />
+        <div class="row">
+          <div class="col-6">
+        <input class ="form-control form-control-m"  type="text" placeholder="Enter a City" id="city-input" />
+          </div>
+          <div class="col-2">
         <input
           type="submit"
-          class="btn btn-primary mb-1 btn-sm"
+          class="btn btn-danger mb-1 btn-m"
           value="Search"
         />
+      </div>
+        <div class="col">
         <input
           type="submit"
           id="current-location"
-          class="btn btn-success mb-1 btn-sm"
-          value="Current"
-        />
+          class="btn btn-success mb-1 btn-m"
+          value="Current City"
+        />       
+        </div>
       </form>
       <div class="row city-weather">
         <div class="col-6">
@@ -43,6 +50,8 @@
             alt="Clear"
             id="icon"
             class="float-left"
+            width="60px"
+            
           />
           <div id="display-temp">17</div>
           <div class="units">
@@ -60,9 +69,10 @@
       </div>
       <div class="forecast" id="forecast">
      
+        </div>
       </div>
     </div>
-    <small class="footer"
+ <small class="footer"
       ><a href="https://github.com/himjaved/My-weather-project" target="_blank"
         >Open Source Code</a
       >
