@@ -130,4 +130,4 @@ function showCurrentPosition() {
 
 let currentButton = document.querySelector("#current-location");
 currentButton.addEventListener("click", showCurrentPosition);
-showCity("Melbourne");
+showCity("Sydney");
